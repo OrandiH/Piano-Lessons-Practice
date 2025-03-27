@@ -1,0 +1,49 @@
+/* Piano.css */
+.piano-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Make the container take up the full viewport height */
+    padding-top: 0%;
+  }
+  
+  .piano {
+    display: flex;
+  }
+  
+  .key {
+    height: 300px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .white {
+    width: 50px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    margin-right: -1px;
+  }
+  
+  .black {
+    width: 30px;
+    height: 120px; /* Make black keys shorter */
+    background-color: black;
+    color: white;
+    margin-left: -15px;
+    margin-right: -16px; /* Adjust for overlap */
+    z-index: 1;
+    height: 155px;
+  }
+  
+  .key:active {
+    background-color: #ccc;
+  }
+  
+  .black:active {
+    background-color: #333;
+  }
