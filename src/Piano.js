@@ -40,7 +40,7 @@ function Piano() {
     oscillator.connect(gainNode);
     gainNode.connect(audioContext.current.destination);
 
-    oscillator.type = 'sine';
+    oscillator.type = 'sine'; // Try 'triangle', 'square', or 'sawtooth' for different sounds
     oscillator.frequency.setValueAtTime(frequency, audioContext.current.currentTime);
     gainNode.gain.setValueAtTime(0.5, audioContext.current.currentTime);
 
